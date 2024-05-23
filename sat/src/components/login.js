@@ -27,6 +27,7 @@ function Login() {
   };
 
   return (
+    <div className="div_body">
     <form onSubmit={handleSubmit}>
       <div className="div1">
       <h3>Login</h3>
@@ -38,16 +39,18 @@ function Login() {
           className="form-control"
           placeholder="Enter email"
           value={email}
+          id="input1"
           onChange={(e) => setEmail(e.target.value)}
         />
       </div>
 
       <div className="mb-3">
-        <label>Password</label>
+        <label className="pass">Password</label>
         <input
           type="password"
           className="form-control"
           placeholder="Enter password"
+          id="input2"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
@@ -63,6 +66,7 @@ function Login() {
       </p>
       </div>
     </form>
+    </div>
   );
 }
 

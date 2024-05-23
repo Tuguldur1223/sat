@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { auth, db } from "./firebase";
 import { setDoc, doc } from "firebase/firestore";
 import { toast } from "react-toastify";
+import "./register.css"
 
 function Register() {
   const [email, setEmail] = useState("");
@@ -35,12 +36,14 @@ function Register() {
   };
 
   return (
+    <div className="div_body">
     <form onSubmit={handleRegister}>
+    <div className="div2">
       <h3>Sign Up</h3>
 
 
       <div className="mb-3">
-        <label>Name</label>
+        <label className="N">Name</label>
         <input
           type="text"
           className="form-control"
@@ -61,7 +64,7 @@ function Register() {
       </div>
 
       <div className="mb-3">
-        <label>Password</label>
+        <label className="pass">Password</label>
         <input
           type="password"
           className="form-control"
@@ -79,7 +82,9 @@ function Register() {
       <p className="forgot-password text-right">
         Already registered <a href="/login">Login</a>
       </p>
+      </div>
     </form>
+    </div>
   );
 }
 export default Register;

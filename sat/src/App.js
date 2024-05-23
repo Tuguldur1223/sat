@@ -26,9 +26,7 @@ function App() {
   });
   return (
     <Router>
-      <div className="App">
-        <div className="auth-wrapper">
-          <div className="auth-inner">
+ 
             <Routes>
               <Route
                 path="/"
@@ -39,9 +37,6 @@ function App() {
               <Route path="/profile" element={<Profile />} />
             </Routes>
             <ToastContainer />
-          </div>
-        </div>
-      </div>
     </Router>
   );
 }

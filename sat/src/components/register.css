@@ -6,9 +6,9 @@
     align-items: center;
     background-color: #2E5CAF;
 }
-.div1{
+.div2{
    width: 500px;
-   height: 400px;
+   height: 480px;
    background-color: white;
    display: flex;
    justify-content: center;
@@ -22,10 +22,11 @@
    margin: 8x;
 }
 .d-grid{
-    margin: 8px;
+    margin: 16px;
 }
-label{
-    margin-right: 160px;
+
+.N{
+    margin-right: 230px;
 }
 .pass{
     margin-right: 200px;
